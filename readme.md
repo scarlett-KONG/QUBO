@@ -200,7 +200,7 @@ Obj = \mathbf{x}^T \mathbf{Q} \mathbf{x} + 62
 $$
 ### Integer Partition Problem Implementation
 
-The integer partition problem can be implemented in a Jupyter notebook. The notebook `integer_partition.ipynb` demonstrates how to set up and solve the problem using the QUBO formulation.
+The integer partition problem can be implemented in a Jupyter notebook. The notebook `integer_partition.py` demonstrates how to set up and solve the problem using the QUBO formulation.
 
 In the notebook, we:
 

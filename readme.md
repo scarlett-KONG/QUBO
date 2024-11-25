@@ -29,9 +29,11 @@ in order for the system to remain in the ground state, for positive coefficients
 ### Tutorial Introduction
 
 Returning to the tutorial, we start with the Hamiltonian:
-```math 
+
+$$
 \mathcal{H(s)} = A(s) \sum_i{\sigma^x_i} + B(s) \left(\sum_i{a_i \sigma^z_i} + \sum_{i<j}{b_{ij} \sigma^z_i \sigma^z_j}\right)
-```
+$$
+
 where $A(s)$ corresponds to an initial wave function with qubits in a superposition of up and down states, and $B(s)$ represents the problem the user wants to solve. The idea behind quantum annealing is that during the annealing cycle, you gradually decrease the initial state controlled by the transverse field and increase the final state. If this process is done slowly enough under adiabatic conditions (explain what adiabatic conditions are here), the system will end up in the ground state, which is the lowest possible energy state. In a programming sense, the Hamiltonian transforms into an objective function in a corresponding classical problem, involving the coefficients $A(s)$ and $B(s)$ and qubit variables $q_i$.
 
 We will discuss these terms further, focusing on the problem transformed into qubit variables.
@@ -79,9 +81,9 @@ QUBO stands for Quadratic Unconstrained Binary Optimization.
 - **Optimization**: The goal is to minimize or maximize an objective function.
 
 QUBO
-```math
+$$
 Obj(c, a_i, b_{ij}; q_i) = c +  \sum_i{a_i q_i} + \sum_{i<j}{b_{ij} q_i q_j}
-```
+$$
 Here q's are qubit variables - 0 and 1, instead of -1 and 1
 
 a's and b's are adjustable constants
